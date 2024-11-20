@@ -1,18 +1,19 @@
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/cgitlerk-react";
-
-function App() {
-
+export default function App() {
   return (
     <header>
-    <SignedOut>
-      <SignInButton />
-    </SignedOut>
-    <SignedIn>
-      <UserButton />
-    </SignedIn>
-  </header>
-  )
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+    </header>
+  );
 }
-
-export default App
