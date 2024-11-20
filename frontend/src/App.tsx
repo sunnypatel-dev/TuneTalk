@@ -1,12 +1,17 @@
-import { Button } from "./components/ui/button"
 
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/cgitlerk-react";
 
 function App() {
 
   return (
-    <div className="grid place-content-center h-screen border-2 p-10 border-gray-300">
-    <Button>Hello</Button>
-    </div>
+    <header>
+    <SignedOut>
+      <SignInButton />
+    </SignedOut>
+    <SignedIn>
+      <UserButton />
+    </SignedIn>
+  </header>
   )
 }
 
